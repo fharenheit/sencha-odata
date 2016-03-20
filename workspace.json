@@ -1,0 +1,30 @@
+{
+    "apps": [
+        "example"
+    ],
+    "frameworks": {
+        "ext": "ext"
+    },
+    "build": {
+        "dir": "${workspace.dir}/build"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages",
+        "extract": "${workspace.dir}/packages/remote"
+    },
+    "name": "Sencha-odata",
+    "tests": {
+        "path": "test/project.json",
+        "browser": {
+            "farms": [
+                {
+                    "name": "SauceLabs",
+                    "type": "saucelabs",
+                    "sessionLimit": 5,
+                    "host": "ondemand.saucelabs.com",
+                    "port": 80
+                }
+            ]
+        }
+    }
+}
