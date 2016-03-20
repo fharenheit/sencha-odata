@@ -22,7 +22,7 @@ You can check the demo application at following page.
 If you want to run it locally, please install Sencha Ext JS library. This workspace needs a copy of Ext JS 6.0.1 extracted into its "ext" directory.
 
     $ cd sencha-odata
-    $ sencha ../{path/to/Ext-JS} .
+    $ cp -r ../{path/to/OtherWorkspace}/ext .
 
 Then, run the demo application.
 
