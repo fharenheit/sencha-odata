@@ -1,6 +1,6 @@
 # sencha-odata
 
-OData proxy for Ext JS 6 application. 
+OData proxy for Ext JS 6 application.
 
 My idea is to wrap [Apache Olingo Library](https://olingo.apache.org/doc/javascript/index.html) by Sencha proxy class. This sample implementation works fine, but it's not a production-ready quality.
 
@@ -19,15 +19,17 @@ You can check the demo application at following page.
 
 [OData Demo Application](http://se.sencha.com/examples/sencha-odata)
 
-If you want to run it locally, please install Sencha Ext JS library (v6 is required).
+If you want to run it locally, please install Sencha Ext JS library. This workspace needs a copy of Ext JS 6.0.1 extracted into its "ext" directory.
 
     $ cd sencha-odata
-    $ sencha app upgrade {path/to/Ext-JS-SDK}
+    $ sencha ../{path/to/Ext-JS} .
 
-Then, build the demo application.
+Then, run the demo application.
 
     $ cd example
-    $ sencha app build development
+    $ sencha app watch
+
+Open `http://localhost:1841/example/` with your web browser.
 
 ## Installation
 
@@ -37,8 +39,8 @@ Then, build the demo application.
 
 ## Usage
 
-- Add requires to include `Ext.data.proxy.OData` class in the store or the model. 
-- In the store, configure the proxy settings, type, serviceRoot, and url. 
+- Add requires to include `Ext.data.proxy.OData` class in the store or the model.
+- In the store, configure the proxy settings, type, serviceRoot, and url.
 - In the model, set the id property.
 
 See sample usage at `example/app/store/People.js` and `example/app/model/Person.js`.
@@ -63,7 +65,7 @@ You can execute test code with [Sencha Test](https://www.sencha.com/products/tes
 
 [2016-03-13] **v0.0.1** Shinobu Kawano (shinobukawano)
 
-* Created a experimental version.
+* Created an experimental version.
 
 ## license
 
